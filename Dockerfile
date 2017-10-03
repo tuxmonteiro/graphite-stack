@@ -1,5 +1,6 @@
 from ubuntu:14.04
 ENV GRAPHITE_RELEASE 0.9.15
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get -y install git supervisor libcairo2-dev libffi-dev pkg-config python-dev python-pip fontconfig apache2 libapache2-mod-wsgi git-core collectd memcached gcc g++ make libtool automake libfontconfig1 libfreetype6 wget
 
